@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Homemade+Apple&family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
+* {
+    margin: 0;
+    /* define a área de margem nos quatro lados do elemento */
+    padding: 0px;
+    /* Responsável por definir uma distância interna entre um elemento e sua borda*/
+    box-sizing: border-box;
+    /* indica que o tamanho agora levará em conta até a borda */
+    text-decoration: none;
+    /* Sem decoração de texto */
+}
+
+body {
+    font-size: 100%;
+    /* tamanho da fonte */
+
+    background: linear-gradient(80.15deg, #5e2404 16.62%, #f09134 85.61%);
+    /* 80.15deg: Essa é a inclinação ou ângulo do gradiente. Ele será desenhado em um ângulo de 68.15 graus. */
+
+}
+
+.cabecalho {
+    display: flex;
+    /* com "flex " podemos manipular os elementos filhos */
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    padding-right: 20px;
+
+}
+
+.cabecalho a:hover {
+    font-weight: bold;
+    display: inline-block;
+    text-underline-position: under;
+}
+
+.cabecalho-imagem {
+    height: 100px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sintony', sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.rodape {
+    padding: 6px;
+    border-top: 0.4px solid #000000;
+    color: #000000;
+    font-family: 'Sintony', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logohead {
+    width: 170px;
+}
+
+.icone {
+    height: 15px;
+    width: 15px;
+    margin-right: 4px;
+}
+
+/* parte da dropbox */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* Define a ordem de empilhamento dos elementos. O dropdown deve ficar acima do restante do conteúdo */
+}
+
+/* Estilo para os links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 47px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Muda a cor de fundo quando passar o mouse por cima*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown quando o mouse estiver sobre o item do menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ajustes para o dropdown aparecer na posição desejada */
+.dropdown {
+    position: relative;
+}
+
+.topo-pai:nth-child(1) {/* :nth-child(1) pega o primeiro elemento sendo class */
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.topo-text {
+    display: block;
+    background-color:rgba(147, 54, 2, 0.529);
+    width: 40%;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 15%;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.topo-text p {
+    font-family: 'Sintony', sans-serif;
+    font-size: 20pt;
+    color: #fff;
+    text-align: justify;
+    margin: 7px;
+}
+
+.topo-image {
+    display: block;
+    width: 50%;
+    height: 80%;
+    margin-top: 3%;
+    margin-left: -100px;
+    z-index: 1;
+    position: relative;
+}
+
+.topo-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.topo-image img:hover {
+    transition: .8s;
+    filter: blur(3px);
+}
+
+.topo-pai:nth-child(2) { /* :nth-child(2) pega o segundo elemento sendo class */
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.area-textos {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos {
+    font-family: 'Sintony', sans-serif;
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #fff;
+    display: block;
+}
+
+.p-texto {
+    font-family: 'Sintony', sans-serif;
+    font-size: 13pt;
+    margin: 5px;
+    text-align: justify;
+    color: #fff;
+    display: block;
+}
+
+.button {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 50px;
+    background-color:rgb(147, 55, 2);
+    border: none;
+    color: #fff;
+}
+
+.button:hover {
+    background-color:#f09234c4;
+    border: #f09134 solid;
+    transition: 1s;
+}
+
+.area-imagens {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.area-imagens img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.area-img:hover {
+    transition: 1s;
+}
+
+.p-img {
+    font-family: 'Sintony', sans-serif;
+    font-size: 15pt;
+    color: #ffffff;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+.p-img:hover {
+    font-family: 'Sintony', sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-top: -50px;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+#superior {
+    margin-top: 7%;
+    width: 40%;
+    height: 40%;
+    margin-left: 7%;
+}
+
+#luxo {
+    margin-top: 7%;
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;
+}
+
+#nupcias {
+    width: 100%;
+    height: 40%;
+    margin-right: 7.5%;
+    margin-left: 7%;
+}
+
+.topo-pai:nth-child(3) { /* :nth-child(3) pega o terceiro elemento sendo class */
+    display: flex;
+    width: 100%;
+    height: 780px;
+    margin-top: 30px;
+}
+
+.navegacao {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 50%;
+}
+
+.ul-texto {
+    font-family: 'Sintony', sans-serif;
+    font-size: 13pt;
+    margin: 5px;
+    text-align: justify;
+    color: #fff;
+    display: block;
+    list-style-type: none;
+}
+
+.ul-texto li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.item img {
+    width: 100%;
+    height: 500px;
+}
+
+.topo-pai:nth-child(4) { /* :nth-child(4) pega o quarto elemento sendo class */
+    display: flex;
+    width: 100%;
+    height: 860px;
+    margin-top: 30px;
+}
+
+.topo-pai:nth-child(5) { /* :nth-child(5) pega o quinto elemento sendo class */
+    display: flex;
+    width: 100%;
+    height: 710px;
+    margin-top: 30px;
+}
+
+.rodape{
+    text-align: center;
+  }
+  
+
+  .logohead{
+    text-align: center;
+    margin-left: 850px;
+  }
